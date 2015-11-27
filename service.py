@@ -9,7 +9,7 @@ app = web.application(urls, globals())
 
 class hello:
     def GET(self):
-        return '<a href="./getdetails">Get Details</a>' + \
+        return '<a href="./wines">Get Details</a>' + \
                '<a href="./orders">Orders</a>'
 
 class WineController:
