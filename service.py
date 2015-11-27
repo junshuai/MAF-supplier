@@ -1,3 +1,8 @@
+import os
+
+abspath = os.path.dirname(__file__)
+sys.path.append(abspath)
+os.chdir(abspath)
 import web
 
 render = web.template.render('.')
@@ -19,5 +24,4 @@ class WineController:
         return data
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 8080))
-    app.run(host="0.0.0.0", port=port)
+    app.run()
