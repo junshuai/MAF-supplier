@@ -1,9 +1,3 @@
-import os
-import sys
-
-abspath = os.path.dirname(__file__)
-sys.path.append(abspath)
-os.chdir(abspath)
 import web
 
 render = web.template.render('.')
