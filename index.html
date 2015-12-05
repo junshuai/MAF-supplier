@@ -42,7 +42,7 @@ $def with (orders)
               $for item in order.items:
                 <li class="list-group-item">
                   <span class="badge">$item.quantity</span>
-                  $item.title ($item.price)
+                  <span class="text-danger">£$item.price</span>&nbsp;$item.title
                 </li>
             </ul>
           </td>
