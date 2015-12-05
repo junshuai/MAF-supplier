@@ -24,6 +24,7 @@ urls = ("/", "index",
         "/?wines", "WineController",
         "/?orders", "OrderController")
 
+
 app = web.application(urls, globals())
 
 
@@ -54,6 +55,9 @@ class OrderController:
         orders.append(Order(order_d[u'name'], order_d[u'address'], order_d[u'email'], items))
 
         web.ctx.status = '201 CREATED'
+
+    def DELETE(self):
+        pass
 
 
 if __name__ == "__main__":
