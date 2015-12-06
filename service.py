@@ -17,8 +17,7 @@ class Order:
         self.items = items 
 
 
-orders = [Order('name', 'address', 'email', [Item('t1', .5, 1), Item('t2', .8, 2)]),
-          Order('n2', 'a2', 'e2', [Item('t3', .9, 3), Item('t4', 1., 4)])]
+orders = []
 
 urls = ("/", "index",
         "/?wines", "WineController",
